@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+
+<body>
+    <script>
+        let nota1 = parseInt(window.prompt("Escribe la nota del primer examen"))
+        let nota2 = parseInt(window.prompt("Escribe la nota del segundo examen"))
+        let nota3 = parseInt(window.prompt("Escribe la nota del tercer examen"))
+        let nota
+        nota1 < nota2 ? nota = nota2 + nota3 : nota = nota1 + nota3
+        if (nota == 10) {
+            window.alert("Tienes matricula.")
+        }
+        else if (nota >= 9 && nota < 10) {
+            window.alert("Tienes un sobresaliente.")
+        }
+        else if (nota >= 7 && nota < 9) {
+            window.alert("Tienes un notable.")
+        }
+        else if (nota >= 6 && nota < 7) {
+            window.alert("Tienes un bien.")
+        }
+        else if (nota >= 5 && nota < 6) {
+            window.alert("Tienes un suficiente.")
+        }
+        else if (nota < 5) {
+            window.alert("Tienes un suspenso.")
+        }
+    </script>
+</body>
+
+</html>
